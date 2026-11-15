@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Home | BugBucket</title><meta name="description" content="BugBucket predicts the category of a software bug report with a trained machine learning model."><meta name="theme-color" content="#05070f"><link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%233b82f6'/%3E%3Ctext x='16' y='23' font-size='20' font-family='Arial' font-weight='700' text-anchor='middle' fill='white'%3EB%3C/text%3E%3C/svg%3E"><link rel="stylesheet" href="css/style.css"></head>
+<body class=""><a class="skip" href="#main">Skip to content</a><header><a class="brand" href="index.html"><span class="logo">B</span>BugBucket</a><nav><a href="index.html" class="active">Home</a><a href="about.html">About</a></nav></header>
+<main id="main">
+<span class="badge"><i></i>AI-powered bug classification</span>
+<h1>Understand bugs.<br><span class="grad">Build better software</span></h1>
+<p class="sub">AI-powered bug classification made simple. Paste your bug report and let BugBucket analyze it.</p>
+<div class="box"><textarea id="report" maxlength="2000" placeholder="Paste your bug report here. Describe the bug, error message, or unexpected behavior you encountered" aria-label="Bug report"></textarea><div class="count"><span id="chars">0</span> / 2000 characters</div></div>
+<div class="examples"><small>Try an example:</small>
+<button class="ex" data-text="Video playback stutters and audio is out of sync on YouTube">Video stutters</button>
+<button class="ex" data-text="Screen reader does not announce the button label">Screen reader</button>
+<button class="ex" data-text="Websocket connection drops when using a proxy server">Websocket drops</button>
+<button class="ex" data-text="Certificate error shown for valid HTTPS site after update">Certificate error</button>
+<button class="ex" data-text="Autofill does not save saved addresses and credit card data">Autofill</button></div>
+<button class="btn" id="predict">Predict</button><p class="error" id="error" role="alert"></p>
+<div class="stats"><div><b>8</b>categories</div><div><b>83%</b>test accuracy</div><div><b>56,588</b>bugs learned from</div></div>
+</main>
+<footer><div class="flinks"><a href="about.html">About</a><a href="https://doi.org/10.5281/zenodo.15004067" target="_blank" rel="noopener">Dataset: BugRepo (CC BY 4.0)</a><a href="https://github.com/eldianpunzalan/BugBucket" target="_blank" rel="noopener">GitHub</a></div>&copy; 2026 BugBucket. All rights reserved.</footer>
+<script src="js/app.js"></script></body></html>

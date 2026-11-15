@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>About | BugBucket</title><link rel="stylesheet" href="css/style.css"></head>
+<body class="purple"><header><a class="brand" href="index.html"><span class="logo">B</span>BugBucket</a><nav><a href="index.html">Home</a><a href="about.html" class="active">About</a></nav></header>
+<main>
+<h1>About BugBucket</h1>
+<p class="sub">Learn more about our project, its purpose, and the team behind BugBucket.</p>
+<div class="panel"><h2>Our project</h2><p class="muted" style="line-height:1.6">BugBucket is an AI-powered bug classification website. It reads a software bug report and predicts which area of the product it belongs to, such as User Interface, Networking, or Security and Privacy.</p>
+<p class="muted" style="line-height:1.6;margin-top:10px"><b style="color:var(--text)">Our purpose:</b> help developers and testers sort bugs faster, so each bug reaches the right team sooner.</p></div>
+<div class="stats"><div><b>8</b>categories</div><div><b>83%</b>test accuracy</div><div><b>0.80</b>macro F1 score</div><div><b>56,588</b>bugs learned from</div></div>
+
+<div class="sec"><h2>How it works</h2><div class="steps">
+<div class="panel step"><b class="n">1</b><b>Paste</b><p class="muted">Type or paste a bug report into the text box.</p></div>
+<div class="panel step"><b class="n">2</b><b>Analyze</b><p class="muted">Our model compares the words with thousands of real bugs.</p></div>
+<div class="panel step"><b class="n">3</b><b>See results</b><p class="muted">Get the predicted category and a match score for all eight.</p></div></div></div>
+
+<div class="sec"><h2>Meet our team</h2>
+<div class="team">
+<div class="panel member"><div class="avatar">M1<img src="img/member1.jpg" alt="" onerror="this.remove()"></div><b>Member 1</b><br><small>Project Leader</small></div>
+<div class="panel member"><div class="avatar">M2<img src="img/member2.jpg" alt="" onerror="this.remove()"></div><b>Member 2</b><br><small>Developer</small></div>
+<div class="panel member"><div class="avatar">M3<img src="img/member3.jpg" alt="" onerror="this.remove()"></div><b>Member 3</b><br><small>Researcher</small></div></div>
+<div class="panel"><h2>Project information</h2><ul><li>Course: BS Computer Science</li><li>Year level: 3rd year</li><li>Section: Your section</li><li>Subject: Your subject</li></ul></div></div>
+
+<div class="sec"><h2>The eight categories</h2><div class="cats" id="cats"></div></div>
+
+<div class="sec"><h2>Built with</h2><div class="tech"><span>Python</span><span>Flask</span><span>scikit-learn</span><span>Logistic Regression</span><span>HTML</span><span>CSS</span><span>JavaScript</span></div></div>
+
+<div class="sec"><div class="panel"><h2>Good to know</h2><ul><li>Categories come from the Bugzilla component where each bug was reported, not from the type of bug.</li><li>The model learned from short bug titles, so brief and clear descriptions work best.</li><li>Results are suggestions to help sorting, not final decisions.</li></ul></div></div>
+
+<div class="sec"><div class="panel"><h2>FAQ</h2>
+<details><summary>Why is the match score sometimes low?</summary><p>The report may be vague or fit several areas. Add details such as what you did and what went wrong.</p></details>
+<details><summary>Where does the data come from?</summary><p>BugRepo (EASE 2025), a collection of Mozilla Bugzilla bugs, licensed CC BY 4.0, doi:10.5281/zenodo.15004067.</p></details>
+<details><summary>How accurate is it?</summary><p>83% on 11,318 bugs the model had never seen (macro F1 0.80). Performance is the hardest category.</p></details>
+<details><summary>Does it store my bug report?</summary><p>No. The text is only used to make the prediction and is not saved.</p></details></div></div>
+</main>
+<footer>&copy; 2026 BugBucket. All rights reserved.</footer>
+<script src="js/app.js"></script></body></html>

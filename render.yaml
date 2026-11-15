@@ -1,0 +1,10 @@
+services:
+  - type: web
+    name: bugbucket
+    runtime: python
+    plan: free
+    buildCommand: pip install -r requirements.txt
+    startCommand: gunicorn --chdir model backend:app
+    envVars:
+      - key: PYTHON_VERSION
+        value: 3.12.3
